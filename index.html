@@ -1,38 +1,69 @@
-<footer>
-<p>© 2026 Mizoram Tourist Guide</p>
-<p>Explore Mizoram ❤️</p>
-</footer>
-
-<script>
-function searchPlaces() {
-  let input = document.getElementById("search").value.toLowerCase();
-  let places = document.querySelectorAll(".place");
-
-  places.forEach(function(place) {
-    place.style.display =
-      place.innerText.toLowerCase().includes(input)
-      ? "block" : "none";
-  });
+div class="place">
+  <h2>Serlui B Dam</h2>
+  <p>Kolasib, Mizoram</p>
+  <a href="https://www.google.com/maps/search/?api=1&query=Serlui+B+Dam+Mizoram" target="_blank">View Map</a>
+    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mizoram Tourist Guide</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f0f7f4;
+  color: #183b32;
 }
-</script>
-
-</body>
-  </html>
-
-
-<header>
-  <h1>🌿 Mizoram Tourist Guide</h1>
-  <p>Discover the Beauty of Mizoram</p>
-</header>
+header {
+  background: #087f5b;
+  color: white;
+  text-align: center;
+  padding: 25px 10px;
+}
+header h1 { margin: 0; }
+.search {
+  width: 85%;
+  padding: 13px;
+  margin: 20px auto;
+  display: block;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  font-size: 16px;
+}
+.container {
+  padding: 15px;
+}
+.place {
+  background: white;
+  margin: 15px 0;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 2px 7px #ccc;
+}
+.place h2 { color: #087f5b; }
+.place a {
+  display: inline-block;
+  background: #087f5b;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 7px;
+}
+footer {
+  text-align: center;
+  background: #087f5b;
+  color: white;
+  padding: 20px;
+}
 </style>
 </head>
 <body>
 <input class="search" id="search"
 placeholder="Search tourist places..."
 oninput="searchPlaces()">
-
-<div class="container" id="places">
-<h2>Lunglei Tourist Attractions</h2>
+  
 
 <div class="place">
   <h3>Theiriat Tlâng</h3>
