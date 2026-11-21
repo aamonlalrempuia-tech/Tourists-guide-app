@@ -385,26 +385,4 @@ oninput="searchPlaces()">
 <a href="https://www.google.com/maps/search/?api=1&query=Aizawl+Mizoram">View Map</a>
 </div>
 
-</div>
-
-<footer>
-<p>© 2026 Mizoram Tourist Guide</p>
-<p>Explore Mizoram ❤️</p>
-</footer>
-
-<script>
-function searchPlaces() {
-  let input = document.getElementById("search").value.toLowerCase();
-  let places = document.querySelectorAll(".place");
-
-  places.forEach(function(place) {
-    place.style.display =
-      place.innerText.toLowerCase().includes(input)
-      ? "block" : "none";
-  });
-}
-</script>
-
-</body>
-  </html>
   
